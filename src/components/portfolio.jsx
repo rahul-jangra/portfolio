@@ -230,42 +230,42 @@ class Portfolio extends React.Component {
                 </a>
                 <a
                     href={fabric6}
-                    data-lightbox="gallery-vmarine"
+                    data-lightbox="gallery-aguadeluz"
                     style={{display: "none"}}
                 >
                   jsx-a11y/anchor-has-content warning
                 </a>
                 <a
                     href={fabric7}
-                    data-lightbox="gallery-vmarine"
+                    data-lightbox="gallery-aguadeluz"
                     style={{display: "none"}}
                 >
                   jsx-a11y/anchor-has-content warning
                 </a>
                 <a
                     href={fabric8}
-                    data-lightbox="gallery-vmarine"
+                    data-lightbox="gallery-aguadeluz"
                     style={{display: "none"}}
                 >
                   jsx-a11y/anchor-has-content warning
                 </a>
                 <a
                     href={fabric9}
-                    data-lightbox="gallery-vmarine"
+                    data-lightbox="gallery-aguadeluz"
                     style={{display: "none"}}
                 >
                   jsx-a11y/anchor-has-content warning
                 </a>
                 <a
                     href={fabric10}
-                    data-lightbox="gallery-vmarine"
+                    data-lightbox="gallery-aguadeluz"
                     style={{display: "none"}}
                 >
                   jsx-a11y/anchor-has-content warning
                 </a>
                 <a
                     href={fabric11}
-                    data-lightbox="gallery-vmarine"
+                    data-lightbox="gallery-aguadeluz"
                     style={{display: "none"}}
                 >
                   jsx-a11y/anchor-has-content warning
@@ -274,7 +274,7 @@ class Portfolio extends React.Component {
             </div>
             <div className="col-md-4">
               <div className="work-box">
-                <a href={clay1} data-lightbox="gallery-aguadeluz">
+                <a href={clay1} data-lightbox="gallery-clay">
                   <div className="work-img">
                     <img src={clay1} alt="" className="img-fluid"/>
                   </div>
@@ -298,7 +298,7 @@ class Portfolio extends React.Component {
                 </a>
                 <a
                     href={clay2}
-                    data-lightbox="gallery-aguadeluz"
+                    data-lightbox="gallery-clay"
                     style={{display: "none"}}
                 >
                   jsx-a11y/anchor-has-content warning
