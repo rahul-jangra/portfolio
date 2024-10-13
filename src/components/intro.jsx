@@ -22,7 +22,7 @@ class Intro extends React.Component {
                     strings={[
                       "Artist",
                       "Book Reader",
-                      "Judger"
+                      "Dreamer"
                     ]}
                     typeSpeed={80}
                     backDelay={1100}

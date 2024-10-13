@@ -1,5 +1,5 @@
 import React from "react";
-import myImage from "../img/myImage.png";
+import clay1 from "../img/Landing image.jpg";
 
 class About extends React.Component {
   constructor() {
@@ -68,45 +68,31 @@ class About extends React.Component {
             <div className="col-sm-12">
               <div className="box-shadow-full">
                 <div className="row">
-                  <div className="col-md-6">
+                  <div className="col-md  -6">
                     <div className="row">
                       <div
-                        className="col-sm-6 col-md-5"
-                        style={{ margin: "0 auto" }}
+                          className="col-sm-6 col-md-5"
+                          style={{margin: "0 auto"}}
                       >
                         <div
-                          className="about-img"
-                          style={{ textAlign: "center" }}
+                            className="about-img"
+                            style={{textAlign: "center"}}
                         >
                           <img
-                            className="img-fluid rounded b-shadow-a"
-                            alt=""
+                              className="img-fluid rounded b-shadow-a"
+                              alt=""
                           />
                         </div>
                       </div>
                     </div>
-                    <div className="skill-mf">
-                      {/* <p className="title-s">Skill</p> */}
-                      {this.state.skills.map(skill => {
-                        return (
-                          <React.Fragment key={skill.id}>
-                            <span>{skill.content}</span>{" "}
-                            <span className="pull-right">
-                              {skill.porcentage}
-                            </span>
-                            <div className="progress">
-                              <div
-                                className="progress-bar"
-                                role="progressbar"
-                                style={{ width: skill.porcentage }}
-                                aria-valuenow={skill.value}
-                                aria-valuemin="0"
-                                aria-valuemax="100"
-                              ></div>
-                            </div>
-                          </React.Fragment>
-                        );
-                      })}
+                    <div className="col-md-4">
+                      <div className="work-box">
+                        <a href={clay1} data-lightbox="gallery-aguadeluz">
+                          <div className="work-img">
+                            <img src={clay1} alt="" className="img-fluid"/>
+                          </div>
+                        </a>
+                      </div>
                     </div>
                   </div>
                   <div className="col-md-6">
@@ -116,9 +102,9 @@ class About extends React.Component {
                       </div>
                       {this.state.about_me.map(content => {
                         return (
-                          <p className="lead" key={content.id}>
-                            {content.content}
-                          </p>
+                            <p className="lead" key={content.id}>
+                              {content.content}
+                            </p>
                         );
                       })}
                     </div>
