@@ -21,9 +21,9 @@ class Contact extends React.Component {
                       </div>
                       <div>
                         <form
-                          action="https://formspree.io/xdoeonlo"
+                          action="https://script.google.com/macros/s/AKfycbzjVSmrrGhHCe0OLZLgO8qWH3LemB3gvTtSGi5ZO2mJpEDgSfciGe_2-rsG3XrL5DM1FA/exec"
                           method="POST"
-                          className="contactForm"
+                          className="gform"
                         >
                           <div id="sendmessage">
                             Your message has been sent. Thank you!
