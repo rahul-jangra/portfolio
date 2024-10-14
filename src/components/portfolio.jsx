@@ -42,7 +42,7 @@ class Portfolio extends React.Component {
           <div className="row">
             <div className="col-sm-12">
               <div className="title-box text-center">
-                <h3 className="title-a">Work</h3>
+                <h3 className="title-a">My Work</h3>
                 <p className="subtitle-a">
                   Incididunt nostrud id aute culpa excepteur pariatur consequat
                   elit culpa nulla enim anim incididunt.
