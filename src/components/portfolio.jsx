@@ -87,99 +87,6 @@ class Portfolio extends React.Component {
             {/* Added by Manisha  */}
             <div className="col-md-4">
               <div className="work-box">
-              <a href={fold} data-lightbox="gallery-fold">
-                  <div className="work-img">
-                  <img src={fold} alt="" className="img-fluid"/>
-                  </div>
-                  <div className="work-content">
-                  <div className="row">
-                      <div className="col-sm-8">
-                      <h2 className="w-title">Fold</h2>
-                      <div className="w-more">
-                          <span className="w-ctegory">
-                          Fold
-                          </span>{" "}
-                      </div>
-                      </div>
-                  </div>
-                  </div>
-              </a>
-              <a
-                  href={fold1}
-                  data-lightbox="gallery-fold"
-                  style={{display: "none"}}
-              >
-                  jsx-a11y/anchor-has-content warning
-              </a>
-              <a
-                  href={fold2}
-                  data-lightbox="gallery-fold"
-                  style={{display: "none"}}
-              >
-                  jsx-a11y/anchor-has-content warning
-              </a>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="work-box">
-              <a href={estate1} data-lightbox="gallery-estate1">
-                  <div className="work-img">
-                  <img src={estate1} alt="" className="img-fluid"/>
-                  </div>
-                  <div className="work-content">
-                  <div className="row">
-                      <div className="col-sm-8">
-                      <h2 className="w-title">100 gharon ki jaagir</h2>
-                      <div className="w-more">
-                          <span className="w-ctegory">
-                          100 gharon ki jaagir-- An estate of 100 houses
-                          </span>{" "}
-                      </div>
-                      </div>
-                  </div>
-                  </div>
-              </a>
-              <a
-                  href={estate2}
-                  data-lightbox="gallery-estate1"
-                  style={{display: "none"}}
-              >
-                  jsx-a11y/anchor-has-content warning
-              </a>
-              
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="work-box">
-              <a href={books1} data-lightbox="gallery-books1">
-                  <div className="work-img">
-                  <img src={books1} alt="" className="img-fluid"/>
-                  </div>
-                  <div className="work-content">
-                  <div className="row">
-                      <div className="col-sm-8">
-                      <h2 className="w-title">Accordion book of Aspirations</h2>
-                      <div className="w-more">
-                          <span className="w-ctegory">
-                          Accordion book of Aspirations
-                          </span>{" "}
-                      </div>
-                      </div>
-                  </div>
-                  </div>
-              </a>
-              <a
-                  href={books2}
-                  data-lightbox="gallery-books1"
-                  style={{display: "none"}}
-              >
-                  jsx-a11y/anchor-has-content warning
-              </a>
-              
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="work-box">
               <a href={chaupad1} data-lightbox="gallery-chaupad1">
                   <div className="work-img">
                   <img src={chaupad1} alt="" className="img-fluid"/>
@@ -250,6 +157,126 @@ class Portfolio extends React.Component {
             </div>
             <div className="col-md-4">
               <div className="work-box">
+              <a href={Live1} data-lightbox="gallery-Live1">
+                  <div className="work-img">
+                  <img src={Live1} alt="" className="img-fluid"/>
+                  </div>
+                  <div className="work-content">
+                  <div className="row">
+                      <div className="col-sm-8">
+                      <h2 className="w-title">Where I live</h2>
+                      <div className="w-more">
+                          <span className="w-ctegory">
+                          Where I live
+                          </span>{" "}
+                      </div>
+                      </div>
+                  </div>
+                  </div>
+              </a>
+              <a
+                  href={Live2}
+                  data-lightbox="gallery-Live1"
+                  style={{display: "none"}}
+              >
+                  jsx-a11y/anchor-has-content warning
+              </a>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="work-box">
+                <a href={love1} data-lightbox="gallery-love1">
+                  <div className="work-img">
+                  <img src={love1} alt="" className="img-fluid"/>
+                  </div>
+                  <div className="work-content">
+                  <div className="row">
+                      <div className="col-sm-8">
+                      <h2 className="w-title">How to fall in love with everyone and everything</h2>
+                      <div className="w-more">
+                          <span className="w-ctegory">
+                          How to fall in love with everyone and everything
+                          </span>{" "}
+                      </div>
+                      </div>
+                  </div>
+                  </div>
+                </a>
+                <a
+                    href={love2}
+                    data-lightbox="gallery-love1"
+                    style={{display: "none"}}
+                >
+                    jsx-a11y/anchor-has-content warning
+                </a>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="work-box">
+                <a href={Long1} data-lightbox="gallery-Long1">
+                  <div className="work-img">
+                  <img src={Long1} alt="" className="img-fluid"/>
+                  </div>
+                  <div className="work-content">
+                  <div className="row">
+                      <div className="col-sm-8">
+                      <h2 className="w-title">Longings</h2>
+                      <div className="w-more">
+                          <span className="w-ctegory">
+                          Longings
+                          </span>{" "}
+                      </div>
+                      </div>
+                  </div>
+                  </div>
+                </a>
+                <a
+                  href={long2}
+                  data-lightbox="gallery-Long1"
+                  style={{display: "none"}}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+                <a
+                  href={long3}
+                  data-lightbox="gallery-Long1"
+                  style={{display: "none"}}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="work-box">
+              <a href={books1} data-lightbox="gallery-books1">
+                  <div className="work-img">
+                  <img src={books1} alt="" className="img-fluid"/>
+                  </div>
+                  <div className="work-content">
+                  <div className="row">
+                      <div className="col-sm-8">
+                      <h2 className="w-title">Accordion book of Aspirations</h2>
+                      <div className="w-more">
+                          <span className="w-ctegory">
+                          Accordion book of Aspirations
+                          </span>{" "}
+                      </div>
+                      </div>
+                  </div>
+                  </div>
+              </a>
+              <a
+                  href={books2}
+                  data-lightbox="gallery-books1"
+                  style={{display: "none"}}
+              >
+                  jsx-a11y/anchor-has-content warning
+              </a>
+              
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="work-box">
               <a href={Tic1} data-lightbox="gallery-Tic1">
                   <div className="work-img">
                   <img src={Tic1} alt="" className="img-fluid"/>
@@ -292,80 +319,17 @@ class Portfolio extends React.Component {
             </div>
             <div className="col-md-4">
               <div className="work-box">
-                <a href={Long1} data-lightbox="gallery-Long1">
+              <a href={fold} data-lightbox="gallery-fold">
                   <div className="work-img">
-                  <img src={Long1} alt="" className="img-fluid"/>
+                  <img src={fold} alt="" className="img-fluid"/>
                   </div>
                   <div className="work-content">
                   <div className="row">
                       <div className="col-sm-8">
-                      <h2 className="w-title">Longings</h2>
+                      <h2 className="w-title">Fold</h2>
                       <div className="w-more">
                           <span className="w-ctegory">
-                          Longings
-                          </span>{" "}
-                      </div>
-                      </div>
-                  </div>
-                  </div>
-                </a>
-                <a
-                  href={long2}
-                  data-lightbox="gallery-Long1"
-                  style={{display: "none"}}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={long3}
-                  data-lightbox="gallery-Long1"
-                  style={{display: "none"}}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="work-box">
-                <a href={love1} data-lightbox="gallery-love1">
-                  <div className="work-img">
-                  <img src={love1} alt="" className="img-fluid"/>
-                  </div>
-                  <div className="work-content">
-                  <div className="row">
-                      <div className="col-sm-8">
-                      <h2 className="w-title">How to fall in love with everyone and everything</h2>
-                      <div className="w-more">
-                          <span className="w-ctegory">
-                          How to fall in love with everyone and everything
-                          </span>{" "}
-                      </div>
-                      </div>
-                  </div>
-                  </div>
-                </a>
-                <a
-                    href={love2}
-                    data-lightbox="gallery-love1"
-                    style={{display: "none"}}
-                >
-                    jsx-a11y/anchor-has-content warning
-                </a>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="work-box">
-              <a href={Live1} data-lightbox="gallery-Live1">
-                  <div className="work-img">
-                  <img src={Live1} alt="" className="img-fluid"/>
-                  </div>
-                  <div className="work-content">
-                  <div className="row">
-                      <div className="col-sm-8">
-                      <h2 className="w-title">Where I live</h2>
-                      <div className="w-more">
-                          <span className="w-ctegory">
-                          Where I live
+                          Fold
                           </span>{" "}
                       </div>
                       </div>
@@ -373,14 +337,50 @@ class Portfolio extends React.Component {
                   </div>
               </a>
               <a
-                  href={Live2}
-                  data-lightbox="gallery-Live1"
+                  href={fold1}
+                  data-lightbox="gallery-fold"
+                  style={{display: "none"}}
+              >
+                  jsx-a11y/anchor-has-content warning
+              </a>
+              <a
+                  href={fold2}
+                  data-lightbox="gallery-fold"
                   style={{display: "none"}}
               >
                   jsx-a11y/anchor-has-content warning
               </a>
               </div>
             </div>
+            <div className="col-md-4">
+              <div className="work-box">
+              <a href={estate1} data-lightbox="gallery-estate1">
+                  <div className="work-img">
+                  <img src={estate1} alt="" className="img-fluid"/>
+                  </div>
+                  <div className="work-content">
+                  <div className="row">
+                      <div className="col-sm-8">
+                      <h2 className="w-title">100 gharon ki jaagir</h2>
+                      <div className="w-more">
+                          <span className="w-ctegory">
+                          100 gharon ki jaagir-- An estate of 100 houses
+                          </span>{" "}
+                      </div>
+                      </div>
+                  </div>
+                  </div>
+              </a>
+              <a
+                  href={estate2}
+                  data-lightbox="gallery-estate1"
+                  style={{display: "none"}}
+              >
+                  jsx-a11y/anchor-has-content warning
+              </a>
+              
+              </div>
+            </div> 
           </div>
         </div>
       </section>
