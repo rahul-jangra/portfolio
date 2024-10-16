@@ -29,6 +29,38 @@ import fabric9 from "../img/fabric/3.2.jpeg";
 import fabric10 from "../img/fabric/4.1.jpeg";
 import fabric11 from "../img/fabric/4.jpeg";
 
+import fold from "../img/Folds/3.0.jpg";
+import fold1 from "../img/Folds/3.1.jpeg";
+import fold2 from "../img/Folds/3.2.jpeg";
+
+import estate1 from "../img/100 gharon ki jaagir-- An estate of 100 houses/6.jpg";
+import estate2 from "../img/100 gharon ki jaagir-- An estate of 100 houses/6.1.jpg";
+
+import books1 from "../img/Accordion book of Aspirations/4.1.jpeg";
+import books2 from "../img/Accordion book of Aspirations/4.jpeg";
+
+import chaupad1 from "../img/Ghar Chaupad/2.0.jpeg";
+import chaupad2 from  "../img/Ghar Chaupad/2.1.jpg";
+import chaupad3 from "../img/Ghar Chaupad/2.2.jpg";
+import chaupad4 from "../img/Ghar Chaupad/2.3.jpg";
+
+import home1 from "../img/Home_ Delivery/4.0.jpeg";
+import home2 from "../img/Home_ Delivery/4.1.jpg";
+
+import love1 from "../img/How to fall in love with everyone and everything/2.0.jpeg";
+import love2 from "../img/How to fall in love with everyone and everything/2.1.jpeg";
+
+import Tic1 from "../img/Ticky tacky/3.0.jpg";
+import Tic2 from "../img/Ticky tacky/3.1.jpg";
+import Tic3 from "../img/Ticky tacky/3.2.jpg";
+import Tic4 from "../img/Ticky tacky/3.3.jpg";
+
+import Live1 from "../img/Where I live/1.0.jpeg";
+import Live2 from "../img/Where I live/1.1.jpg";
+
+import Long1 from "../img/Longings/1.jpg";
+import long2 from "../img/Longings/IMAGE1.jpg";
+import long3 from "../img/Longings/IMAGE2.jpg";
 
 import clay1 from "../img/clay/IMG_1484.JPG";
 import clay2 from "../img/clay/IMG_1486.JPG";
@@ -42,7 +74,7 @@ class Portfolio extends React.Component {
           <div className="row">
             <div className="col-sm-12">
               <div className="title-box text-center">
-                <h3 className="title-a">My Work</h3>
+                <h3 className="title-a">Work</h3>
                 <p className="subtitle-a">
                   Incididunt nostrud id aute culpa excepteur pariatur consequat
                   elit culpa nulla enim anim incididunt.
@@ -52,125 +84,242 @@ class Portfolio extends React.Component {
             </div>
           </div>
           <div className="row">
+            {/* Added by Manisha  */}
             <div className="col-md-4">
               <div className="work-box">
-                <a href={stock} data-lightbox="gallery-vmarine">
+              <a href={fold} data-lightbox="gallery-fold">
                   <div className="work-img">
-                    <img src={stock} alt="" className="img-fluid"/>
+                  <img src={fold} alt="" className="img-fluid"/>
                   </div>
                   <div className="work-content">
-                    <div className="row">
+                  <div className="row">
                       <div className="col-sm-8">
-                        <h2 className="w-title">Paper</h2>
-                        <div className="w-more">
+                      <h2 className="w-title">Fold</h2>
+                      <div className="w-more">
                           <span className="w-ctegory">
-                            Paper
-                          </span>
-                        </div>
+                          Fold
+                          </span>{" "}
                       </div>
-                      <div className="col-sm-4">
-                        <div className="w-like">
-                          <span className="ion-ios-plus-outline"></span>
-                        </div>
                       </div>
-                    </div>
+                  </div>
+                  </div>
+              </a>
+              <a
+                  href={fold1}
+                  data-lightbox="gallery-fold"
+                  style={{display: "none"}}
+              >
+                  jsx-a11y/anchor-has-content warning
+              </a>
+              <a
+                  href={fold2}
+                  data-lightbox="gallery-fold"
+                  style={{display: "none"}}
+              >
+                  jsx-a11y/anchor-has-content warning
+              </a>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="work-box">
+              <a href={estate1} data-lightbox="gallery-estate1">
+                  <div className="work-img">
+                  <img src={estate1} alt="" className="img-fluid"/>
+                  </div>
+                  <div className="work-content">
+                  <div className="row">
+                      <div className="col-sm-8">
+                      <h2 className="w-title">100 gharon ki jaagir</h2>
+                      <div className="w-more">
+                          <span className="w-ctegory">
+                          100 gharon ki jaagir-- An estate of 100 houses
+                          </span>{" "}
+                      </div>
+                      </div>
+                  </div>
+                  </div>
+              </a>
+              <a
+                  href={estate2}
+                  data-lightbox="gallery-estate1"
+                  style={{display: "none"}}
+              >
+                  jsx-a11y/anchor-has-content warning
+              </a>
+              
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="work-box">
+              <a href={books1} data-lightbox="gallery-books1">
+                  <div className="work-img">
+                  <img src={books1} alt="" className="img-fluid"/>
+                  </div>
+                  <div className="work-content">
+                  <div className="row">
+                      <div className="col-sm-8">
+                      <h2 className="w-title">Accordion book of Aspirations</h2>
+                      <div className="w-more">
+                          <span className="w-ctegory">
+                          Accordion book of Aspirations
+                          </span>{" "}
+                      </div>
+                      </div>
+                  </div>
+                  </div>
+              </a>
+              <a
+                  href={books2}
+                  data-lightbox="gallery-books1"
+                  style={{display: "none"}}
+              >
+                  jsx-a11y/anchor-has-content warning
+              </a>
+              
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="work-box">
+              <a href={chaupad1} data-lightbox="gallery-chaupad1">
+                  <div className="work-img">
+                  <img src={chaupad1} alt="" className="img-fluid"/>
+                  </div>
+                  <div className="work-content">
+                  <div className="row">
+                      <div className="col-sm-8">
+                      <h2 className="w-title">Chaupad</h2>
+                      <div className="w-more">
+                          <span className="w-ctegory">
+                          Chaupad
+                          </span>{" "}
+                      </div>
+                      </div>
+                  </div>
+                  </div>
+              </a>
+              <a
+                  href={chaupad2}
+                  data-lightbox="gallery-chaupad1"
+                  style={{display: "none"}}
+              >
+                  jsx-a11y/anchor-has-content warning
+              </a>
+              <a
+                  href={chaupad3}
+                  data-lightbox="gallery-chaupad1"
+                  style={{display: "none"}}
+              >
+                  jsx-a11y/anchor-has-content warning
+              </a>
+              <a
+                  href={chaupad4}
+                  data-lightbox="gallery-chaupad1"
+                  style={{display: "none"}}
+              >
+                  jsx-a11y/anchor-has-content warning
+              </a>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="work-box">
+              <a href={home1} data-lightbox="gallery-home1">
+                  <div className="work-img">
+                  <img src={home1} alt="" className="img-fluid"/>
+                  </div>
+                  <div className="work-content">
+                  <div className="row">
+                      <div className="col-sm-8">
+                      <h2 className="w-title">Home Delivery</h2>
+                      <div className="w-more">
+                          <span className="w-ctegory">
+                          Home Delivery
+                          </span>{" "}
+                      </div>
+                      </div>
+                  </div>
+                  </div>
+              </a>
+              <a
+                  href={home2}
+                  data-lightbox="gallery-home1"
+                  style={{display: "none"}}
+              >
+                  jsx-a11y/anchor-has-content warning
+              </a>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="work-box">
+              <a href={Tic1} data-lightbox="gallery-Tic1">
+                  <div className="work-img">
+                  <img src={Tic1} alt="" className="img-fluid"/>
+                  </div>
+                  <div className="work-content">
+                  <div className="row">
+                      <div className="col-sm-8">
+                      <h2 className="w-title">Ticky tacky</h2>
+                      <div className="w-more">
+                          <span className="w-ctegory">
+                          Ticky tacky
+                          </span>{" "}
+                      </div>
+                      </div>
+                  </div>
+                  </div>
+              </a>
+              <a
+                  href={Tic2}
+                  data-lightbox="gallery-Tic1"
+                  style={{display: "none"}}
+              >
+                  jsx-a11y/anchor-has-content warning
+              </a>
+              <a
+                  href={Tic3}
+                  data-lightbox="gallery-Tic1"
+                  style={{display: "none"}}
+              >
+                  jsx-a11y/anchor-has-content warning
+              </a>
+              <a
+                  href={Tic4}
+                  data-lightbox="gallery-Tic1"
+                  style={{display: "none"}}
+              >
+                  jsx-a11y/anchor-has-content warning
+              </a>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="work-box">
+                <a href={Long1} data-lightbox="gallery-Long1">
+                  <div className="work-img">
+                  <img src={Long1} alt="" className="img-fluid"/>
+                  </div>
+                  <div className="work-content">
+                  <div className="row">
+                      <div className="col-sm-8">
+                      <h2 className="w-title">Longings</h2>
+                      <div className="w-more">
+                          <span className="w-ctegory">
+                          Longings
+                          </span>{" "}
+                      </div>
+                      </div>
+                  </div>
                   </div>
                 </a>
                 <a
-                    href={stock1}
-                    data-lightbox="gallery-vmarine"
-                    style={{display: "none"}}
+                  href={long2}
+                  data-lightbox="gallery-Long1"
+                  style={{display: "none"}}
                 >
                   jsx-a11y/anchor-has-content warning
                 </a>
                 <a
-                    href={stock2}
-                    data-lightbox="gallery-vmarine"
-                    style={{display: "none"}}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                    href={stock3}
-                    data-lightbox="gallery-vmarine"
-                    style={{display: "none"}}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                    href={stock4}
-                    data-lightbox="gallery-vmarine"
-                    style={{display: "none"}}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                    href={stock5}
-                    data-lightbox="gallery-vmarine"
-                    style={{display: "none"}}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                    href={stock6}
-                    data-lightbox="gallery-vmarine"
-                    style={{display: "none"}}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                    href={stock7}
-                    data-lightbox="gallery-vmarine"
-                    style={{display: "none"}}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                    href={stock8}
-                    data-lightbox="gallery-vmarine"
-                    style={{display: "none"}}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                    href={stock9}
-                    data-lightbox="gallery-vmarine"
-                    style={{display: "none"}}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                    href={stock10}
-                    data-lightbox="gallery-vmarine"
-                    style={{display: "none"}}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                    href={stock11}
-                    data-lightbox="gallery-vmarine"
-                    style={{display: "none"}}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                    href={stock12}
-                    data-lightbox="gallery-vmarine"
-                    style={{display: "none"}}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                    href={stock13}
-                    data-lightbox="gallery-vmarine"
-                    style={{display: "none"}}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                    href={stock14}
-                    data-lightbox="gallery-vmarine"
-                    style={{display: "none"}}
+                  href={long3}
+                  data-lightbox="gallery-Long1"
+                  style={{display: "none"}}
                 >
                   jsx-a11y/anchor-has-content warning
                 </a>
@@ -178,131 +327,58 @@ class Portfolio extends React.Component {
             </div>
             <div className="col-md-4">
               <div className="work-box">
-                <a href={fabric1} data-lightbox="gallery-aguadeluz">
+                <a href={love1} data-lightbox="gallery-love1">
                   <div className="work-img">
-                    <img src={fabric1} alt="" className="img-fluid"/>
+                  <img src={love1} alt="" className="img-fluid"/>
                   </div>
                   <div className="work-content">
-                    <div className="row">
+                  <div className="row">
                       <div className="col-sm-8">
-                        <h2 className="w-title">Fabric</h2>
-                        <div className="w-more">
+                      <h2 className="w-title">How to fall in love with everyone and everything</h2>
+                      <div className="w-more">
                           <span className="w-ctegory">
-                            Fabric
+                          How to fall in love with everyone and everything
                           </span>{" "}
-                        </div>
                       </div>
-                      <div className="col-sm-4">
-                        <div className="w-like">
-                          <span className="ion-ios-plus-outline"></span>
-                        </div>
                       </div>
-                    </div>
+                  </div>
                   </div>
                 </a>
                 <a
-                    href={fabric2}
-                    data-lightbox="gallery-aguadeluz"
+                    href={love2}
+                    data-lightbox="gallery-love1"
                     style={{display: "none"}}
                 >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                    href={fabric3}
-                    data-lightbox="gallery-aguadeluz"
-                    style={{display: "none"}}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                    href={fabric4}
-                    data-lightbox="gallery-aguadeluz"
-                    style={{display: "none"}}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                    href={fabric5}
-                    data-lightbox="gallery-aguadeluz"
-                    style={{display: "none"}}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                    href={fabric6}
-                    data-lightbox="gallery-aguadeluz"
-                    style={{display: "none"}}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                    href={fabric7}
-                    data-lightbox="gallery-aguadeluz"
-                    style={{display: "none"}}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                    href={fabric8}
-                    data-lightbox="gallery-aguadeluz"
-                    style={{display: "none"}}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                    href={fabric9}
-                    data-lightbox="gallery-aguadeluz"
-                    style={{display: "none"}}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                    href={fabric10}
-                    data-lightbox="gallery-aguadeluz"
-                    style={{display: "none"}}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                    href={fabric11}
-                    data-lightbox="gallery-aguadeluz"
-                    style={{display: "none"}}
-                >
-                  jsx-a11y/anchor-has-content warning
+                    jsx-a11y/anchor-has-content warning
                 </a>
               </div>
             </div>
             <div className="col-md-4">
               <div className="work-box">
-                <a href={clay1} data-lightbox="gallery-clay">
+              <a href={Live1} data-lightbox="gallery-Live1">
                   <div className="work-img">
-                    <img src={clay1} alt="" className="img-fluid"/>
+                  <img src={Live1} alt="" className="img-fluid"/>
                   </div>
                   <div className="work-content">
-                    <div className="row">
+                  <div className="row">
                       <div className="col-sm-8">
-                        <h2 className="w-title">Clay</h2>
-                        <div className="w-more">
+                      <h2 className="w-title">Where I live</h2>
+                      <div className="w-more">
                           <span className="w-ctegory">
-                            Clay
+                          Where I live
                           </span>{" "}
-                        </div>
                       </div>
-                      <div className="col-sm-4">
-                        <div className="w-like">
-                          <span className="ion-ios-plus-outline"></span>
-                        </div>
                       </div>
-                    </div>
                   </div>
-                </a>
-                <a
-                    href={clay2}
-                    data-lightbox="gallery-clay"
-                    style={{display: "none"}}
-                >
+                  </div>
+              </a>
+              <a
+                  href={Live2}
+                  data-lightbox="gallery-Live1"
+                  style={{display: "none"}}
+              >
                   jsx-a11y/anchor-has-content warning
-                </a>
+              </a>
               </div>
             </div>
           </div>

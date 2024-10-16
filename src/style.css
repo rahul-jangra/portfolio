@@ -84,6 +84,7 @@ a:hover {
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
+  background-color: #fff;
 }
 
 .overlay-mf {
@@ -213,7 +214,7 @@ a:hover {
   border-radius: 50%;
   line-height: 1.4;
   margin: 0 15px 0 0;
-  box-shadow: 0 0 0 3px var(--theme-color);
+  box-shadow: 0 0 0 3px;
   transition: all 500ms ease;
 }
 
@@ -757,6 +758,7 @@ PORTFOLIO
 TESTIMONIALS
 */
 
+
 .testimonials .owl-carousel .owl-item img {
   width: auto;
 }
@@ -995,6 +997,7 @@ BUTTON
 @media (max-width: 1024px) {
   .bg-image {
     background-attachment: scroll;
+    background-color: #fff;
   }
 }
 
