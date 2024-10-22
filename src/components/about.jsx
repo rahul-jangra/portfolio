@@ -43,7 +43,7 @@ class About extends React.Component {
               <div className="box-shadow-full">
                 <div className="row">
                   <div className="col-md-6">
-                        <a href={clay1} >
+                        <a>
                             <img src={clay1} alt="" className="img-fluid"/>
                         </a>
                   </div>
