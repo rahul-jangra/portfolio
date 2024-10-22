@@ -1,34 +1,5 @@
 import React from "react";
 
-//import stock
-import stock from "../img/paper/1.0.jpg";
-import stock1 from "../img/paper/1.1.jpg";
-import stock2 from "../img/paper/1.2.jpg";
-import stock3 from "../img/paper/2.0.jpeg";
-import stock4 from "../img/paper/2.1.jpeg";
-import stock5 from "../img/paper/3.0.jpg";
-import stock6 from "../img/paper/3.1.jpg";
-import stock7 from "../img/paper/3.2.jpg";
-import stock8 from "../img/paper/3.3.jpg";
-import stock9 from "../img/paper/4.0.jpeg";
-import stock10 from "../img/paper/4.1.jpg";
-import stock11 from "../img/paper/5.0.jpeg";
-import stock12 from "../img/paper/5.1.jpeg";
-import stock13 from "../img/paper/6.1.jpg";
-import stock14 from "../img/paper/6.jpg";
-
-import fabric1 from "../img/fabric/1.0.jpeg";
-import fabric2 from "../img/fabric/1.1.PNG";
-import fabric3 from "../img/fabric/2.0.jpeg";
-import fabric4 from "../img/fabric/2.1.jpg";
-import fabric5 from "../img/fabric/2.2.jpg";
-import fabric6 from "../img/fabric/2.3.jpg";
-import fabric7 from "../img/fabric/3.0.jpg";
-import fabric8 from "../img/fabric/3.1.jpeg";
-import fabric9 from "../img/fabric/3.2.jpeg";
-import fabric10 from "../img/fabric/4.1.jpeg";
-import fabric11 from "../img/fabric/4.jpeg";
-
 import fold from "../img/Folds/3.0.jpg";
 import fold1 from "../img/Folds/3.1.jpeg";
 import fold2 from "../img/Folds/3.2.jpeg";
@@ -59,11 +30,8 @@ import Live1 from "../img/Where I live/1.0.jpeg";
 import Live2 from "../img/Where I live/1.1.jpg";
 
 import Long1 from "../img/Longings/1.jpg";
-import long2 from "../img/Longings/IMAGE1.jpg";
-import long3 from "../img/Longings/IMAGE2.jpg";
-
-import clay1 from "../img/clay/IMG_1484.JPG";
-import clay2 from "../img/clay/IMG_1486.JPG";
+import long2 from "../img/Longings/IMAGE1.JPG";
+import long3 from "../img/Longings/IMAGE2.JPG";
 
 
 class Portfolio extends React.Component {
@@ -76,8 +44,8 @@ class Portfolio extends React.Component {
               <div className="title-box text-center">
                 <h3 className="title-a">Work</h3>
                 <p className="subtitle-a">
-                  Incididunt nostrud id aute culpa excepteur pariatur consequat
-                  elit culpa nulla enim anim incididunt.
+                  {/* Incididunt nostrud id aute culpa excepteur pariatur consequat
+                  elit culpa nulla enim anim incididunt. */}
                 </p>
                 <div className="line-mf"></div>
               </div>
@@ -94,11 +62,11 @@ class Portfolio extends React.Component {
                   <div className="work-content">
                   <div className="row">
                       <div className="col-sm-8">
-                      <h2 className="w-title">Chaupad</h2>
+                      <h2 className="w-title">Ghar Chaupad</h2>
                       <div className="w-more">
-                          <span className="w-ctegory">
+                          {/* <span className="w-ctegory">
                           Chaupad
-                          </span>{" "}
+                          </span>{" "} */}
                       </div>
                       </div>
                   </div>
@@ -136,11 +104,11 @@ class Portfolio extends React.Component {
                   <div className="work-content">
                   <div className="row">
                       <div className="col-sm-8">
-                      <h2 className="w-title">Home Delivery</h2>
+                      <h2 className="w-title">Home: Delivery</h2>
                       <div className="w-more">
-                          <span className="w-ctegory">
+                          {/* <span className="w-ctegory">
                           Home Delivery
-                          </span>{" "}
+                          </span>{" "} */}
                       </div>
                       </div>
                   </div>
@@ -166,9 +134,9 @@ class Portfolio extends React.Component {
                       <div className="col-sm-8">
                       <h2 className="w-title">Where I live</h2>
                       <div className="w-more">
-                          <span className="w-ctegory">
+                          {/* <span className="w-ctegory">
                           Where I live
-                          </span>{" "}
+                          </span>{" "} */}
                       </div>
                       </div>
                   </div>
@@ -194,9 +162,9 @@ class Portfolio extends React.Component {
                       <div className="col-sm-8">
                       <h2 className="w-title">How to fall in love with everyone and everything</h2>
                       <div className="w-more">
-                          <span className="w-ctegory">
+                          {/* <span className="w-ctegory">
                           How to fall in love with everyone and everything
-                          </span>{" "}
+                          </span>{" "} */}
                       </div>
                       </div>
                   </div>
@@ -220,11 +188,11 @@ class Portfolio extends React.Component {
                   <div className="work-content">
                   <div className="row">
                       <div className="col-sm-8">
-                      <h2 className="w-title">Longings</h2>
+                      <h2 className="w-title">[Be]Longings</h2>
                       <div className="w-more">
-                          <span className="w-ctegory">
+                          {/* <span className="w-ctegory">
                           Longings
-                          </span>{" "}
+                          </span>{" "} */}
                       </div>
                       </div>
                   </div>
@@ -257,9 +225,9 @@ class Portfolio extends React.Component {
                       <div className="col-sm-8">
                       <h2 className="w-title">Accordion book of Aspirations</h2>
                       <div className="w-more">
-                          <span className="w-ctegory">
+                          {/* <span className="w-ctegory">
                           Accordion book of Aspirations
-                          </span>{" "}
+                          </span>{" "} */}
                       </div>
                       </div>
                   </div>
@@ -286,9 +254,9 @@ class Portfolio extends React.Component {
                       <div className="col-sm-8">
                       <h2 className="w-title">Ticky tacky</h2>
                       <div className="w-more">
-                          <span className="w-ctegory">
+                          {/* <span className="w-ctegory">
                           Ticky tacky
-                          </span>{" "}
+                          </span>{" "} */}
                       </div>
                       </div>
                   </div>
@@ -328,9 +296,9 @@ class Portfolio extends React.Component {
                       <div className="col-sm-8">
                       <h2 className="w-title">Fold</h2>
                       <div className="w-more">
-                          <span className="w-ctegory">
+                          {/* <span className="w-ctegory">
                           Fold
-                          </span>{" "}
+                          </span>{" "} */}
                       </div>
                       </div>
                   </div>
@@ -361,11 +329,11 @@ class Portfolio extends React.Component {
                   <div className="work-content">
                   <div className="row">
                       <div className="col-sm-8">
-                      <h2 className="w-title">100 gharon ki jaagir</h2>
+                      <h2 className="w-title">100 gharon ki jaagir-- An estate of 100 houses</h2>
                       <div className="w-more">
-                          <span className="w-ctegory">
+                          {/* <span className="w-ctegory">
                           100 gharon ki jaagir-- An estate of 100 houses
-                          </span>{" "}
+                          </span>{" "} */}
                       </div>
                       </div>
                   </div>
