@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b6b46321.css",
-    "main.js": "/static/js/main.f335bd96.js",
+    "main.css": "/static/css/main.2ed751f1.css",
+    "main.js": "/static/js/main.e4e2995c.js",
     "static/media/3.1.jpeg": "/static/media/3.1.0947c3cc942dfa1d1fa6.jpeg",
     "static/media/2.0.jpeg": "/static/media/2.0.3dc1e71e54a42e53ba63.jpeg",
     "static/media/3.2.jpeg": "/static/media/3.2.38250d007470f461b516.jpeg",
@@ -16,7 +16,7 @@
     "static/media/profile-pic.JPG": "/static/media/profile-pic.e95a884dd0e6005503dd.JPG",
     "static/media/2.1.jpg": "/static/media/2.1.f60ed169121a015fb200.jpg",
     "static/media/Landing imagenew (1).jpg": "/static/media/Landing imagenew (1).ad2d621ff98c9d122a2a.jpg",
-    "static/media/IMAGE2.JPG": "/static/media/IMAGE2.5b90192e31f103521112.JPG",
+    "static/media/IMAGE2.jpg": "/static/media/IMAGE2.5b90192e31f103521112.jpg",
     "static/media/3.3.jpg": "/static/media/3.3.d734f54a956092ef2d73.jpg",
     "static/media/3.0.jpg": "/static/media/3.0.cfd240facad25c83152c.jpg",
     "static/media/3.2.jpg": "/static/media/3.2.16fc858ec2890d6076fd.jpg",
@@ -32,17 +32,17 @@
     "static/media/1.1.jpg": "/static/media/1.1.33ca90f6c66eaf0d7d7a.jpg",
     "static/media/ionicons.eot?v=2.0.0": "/static/media/ionicons.68e3a4f9a8d8c679b4ae.eot",
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
-    "static/media/IMAGE1.JPG": "/static/media/IMAGE1.d54ac26cd2fac8aafe65.JPG",
+    "static/media/IMAGE1.jpg": "/static/media/IMAGE1.d54ac26cd2fac8aafe65.jpg",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "static/media/ionicons.woff?v=2.0.0": "/static/media/ionicons.0b4ad6170d93c4aa91ee.woff",
     "static/media/casting (2).png": "/static/media/casting (2).445255ca34a4d17fdf16.png",
     "static/media/casting (1).png": "/static/media/casting (1).deb3439d430f5d0c06fa.png",
     "index.html": "/index.html",
-    "main.b6b46321.css.map": "/static/css/main.b6b46321.css.map",
-    "main.f335bd96.js.map": "/static/js/main.f335bd96.js.map"
+    "main.2ed751f1.css.map": "/static/css/main.2ed751f1.css.map",
+    "main.e4e2995c.js.map": "/static/js/main.e4e2995c.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6b46321.css",
-    "static/js/main.f335bd96.js"
+    "static/css/main.2ed751f1.css",
+    "static/js/main.e4e2995c.js"
   ]
 }
