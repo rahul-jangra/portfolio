@@ -1006,3 +1006,7 @@ BUTTON
     bottom: 15px;
   }
 }
+
+.lightbox .lb-image {
+  border: 0;
+}
