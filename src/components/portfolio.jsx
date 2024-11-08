@@ -30,8 +30,8 @@ import Live1 from "../img/Where I live/1.0.jpeg";
 import Live2 from "../img/Where I live/1.1.jpg";
 
 import Long1 from "../img/Longings/1.jpg";
-import long2 from "../img/Longings/IMAGE1.JPG";
-import long3 from "../img/Longings/IMAGE2.JPG";
+import long2 from "../img/Longings/IMAGE1.jpg";
+import long3 from "../img/Longings/IMAGE2.jpg";
 
 
 class Portfolio extends React.Component {
