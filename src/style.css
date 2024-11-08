@@ -1010,3 +1010,8 @@ BUTTON
 .lightbox .lb-image {
   border: 0;
 }
+
+
+.work-img img {
+  transition: all 100s;
+}
