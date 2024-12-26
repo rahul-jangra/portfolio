@@ -2,7 +2,11 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vidhijangra.com/",
+  "homepage": "https://rahul-jangra.github.io/portfolio/",
+  "homepageComments": {
+    "https://vidhijangra.com/": "use this when deploying to vidhi remote",
+    "https://rahul-jangra.github.io/portfolio/": "use this when deploying to rahul remote"
+  },
   "dependencies": {
     "bootstrap": "^4.3.1",
     "gh-pages": "^2.2.0",
