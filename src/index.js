@@ -27,19 +27,26 @@ import Portfolio from './components/portfolio.jsx';
 import Contact from './components/contact.jsx';
 import BackToTop from './components/back-top.jsx';
 import Preloader from './components/preloader';
+import {Provider} from "react-redux";
+import store from "./store/store";
+import {fetchGalleryNames} from "./store/galleryNamesAction";
 
+
+store.dispatch(fetchGalleryNames)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <React.Fragment>
-        <Navbar />
-        <Intro />
-        <About />
-        <Portfolio />
-        <Contact />
-        <BackToTop />
-        <Preloader />
-    </React.Fragment>);
+    <Provider store={store}>
+            <React.Fragment>
+                <Navbar />
+                <Intro />
+                <About />
+                <Portfolio />
+                <Contact />
+                <BackToTop />
+                <Preloader />
+            </React.Fragment>
+    </Provider>);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

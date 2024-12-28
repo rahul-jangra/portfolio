@@ -8,6 +8,8 @@
     "https://rahul-jangra.github.io/portfolio/": "use this when deploying to rahul remote"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.5.0",
+    "axios": "^1.7.9",
     "bootstrap": "^4.3.1",
     "gh-pages": "^2.2.0",
     "jquery": "^3.4.1",
@@ -16,8 +18,9 @@
     "popper.js": "^1.15.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-redux": "^9.2.0",
     "react-scripts": "^5.0.1",
-    "react-typed": "^1.1.2",
+    "react-typed": "^2.0.12",
     "typed.js": "^2.0.10"
   },
   "scripts": {
