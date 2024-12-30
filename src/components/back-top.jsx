@@ -9,14 +9,17 @@ class BackToTop extends React.Component {
             return false;
           });
         window.addEventListener('scroll', ()=>{
-            if(window.pageYOffset > 100){
-                document.querySelector('.back-to-top').classList.remove("fadeOut");
-                document.querySelector('.back-to-top').style.display = "block";
-                document.querySelector('.back-to-top').classList.add("fadeIn");
-            }else {
-                document.querySelector('.back-to-top').classList.remove("fadeIn");
-                document.querySelector('.back-to-top').classList.add("fadeOut");
+            if (document.querySelector('.back-to-top')) {
+                if(window.pageYOffset > 100){
+                    document.querySelector('.back-to-top').classList.remove("fadeOut");
+                    document.querySelector('.back-to-top').style.display = "block";
+                    document.querySelector('.back-to-top').classList.add("fadeIn");
+                }else {
+                    document.querySelector('.back-to-top').classList.remove("fadeIn");
+                    document.querySelector('.back-to-top').classList.add("fadeOut");
+                }
             }
+
         });
     }
 

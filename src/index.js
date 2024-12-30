@@ -27,19 +27,59 @@ import Portfolio from './components/portfolio.jsx';
 import Contact from './components/contact.jsx';
 import BackToTop from './components/back-top.jsx';
 import Preloader from './components/preloader';
+import {Provider} from "react-redux";
+import store from "./store/store";
+import {fetchGalleryNames} from "./store/galleryNamesAction";
+import {BrowserRouter, Outlet, Route, Routes} from "react-router";
+import GalleryTab from "./components/Gallery/GalleryTab";
+import GalleryAppBar from "./components/Gallery/GalleryAppBar";
+import WorkCover from "./components/WorkCover";
 
+
+store.dispatch(fetchGalleryNames)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+export const HOME_PAGE_ROUTE = "/portfolio";
+export const GALLERY_PAGE_ROUTE = "/portfolio/gallery/:id";
+
+const HomePage = () => {
+    return (
+        <div>
+            <Navbar />
+            <Intro />
+            <About />
+            <Portfolio />
+            <WorkCover />
+            <Contact />
+            <BackToTop />
+            <Preloader />
+        </div>
+    )
+}
+
+const GalleryDetailsPages = () => {
+    return (
+        <div>
+            <GalleryAppBar />
+            <GalleryTab />
+        </div>
+    )
+}
+
+
+
 root.render(
-    <React.Fragment>
-        <Navbar />
-        <Intro />
-        <About />
-        <Portfolio />
-        <Contact />
-        <BackToTop />
-        <Preloader />
-    </React.Fragment>);
+    <Provider store={store}>
+        <BrowserRouter>
+            <Routes>
+                <Route path={GALLERY_PAGE_ROUTE} element={<GalleryDetailsPages />} />
+                <Route path={HOME_PAGE_ROUTE} element={<HomePage />} />
+            </Routes>
+        </BrowserRouter>
+    </Provider>);
+
+
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
