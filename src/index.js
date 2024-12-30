@@ -30,23 +30,54 @@ import Preloader from './components/preloader';
 import {Provider} from "react-redux";
 import store from "./store/store";
 import {fetchGalleryNames} from "./store/galleryNamesAction";
+import {BrowserRouter, Outlet, Route, Routes} from "react-router";
+import GalleryTab from "./components/Gallery/GalleryTab";
+import GalleryDetails from "./components/Gallery/GalleryDetails";
 
 
 store.dispatch(fetchGalleryNames)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+export const HOME_PAGE_ROUTE = "/portfolio";
+export const GALLERY_PAGE_ROUTE = "/portfolio/gallery/:id";
+
+const HomePage = () => {
+    return (
+        <React.Fragment>
+            <Navbar />
+            <Intro />
+            <About />
+            <Portfolio />
+            <Contact />
+            <BackToTop />
+            <Preloader />
+        </React.Fragment>
+    )
+}
+
+const GalleryDetailsPages = () => {
+    return (
+        <React.Fragment>
+            <GalleryDetails />
+            <GalleryTab />
+        </React.Fragment>
+    )
+}
+
+
+
 root.render(
     <Provider store={store}>
-            <React.Fragment>
-                <Navbar />
-                <Intro />
-                <About />
-                <Portfolio />
-                <Contact />
-                <BackToTop />
-                <Preloader />
-            </React.Fragment>
+        <BrowserRouter>
+            <Routes>
+                <Route path={GALLERY_PAGE_ROUTE} element={<GalleryDetailsPages />} />
+                <Route path={HOME_PAGE_ROUTE} element={<HomePage />} />
+            </Routes>
+        </BrowserRouter>
     </Provider>);
+
+
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
