@@ -8,6 +8,9 @@ import {getGalleryNames} from "../../store/gallerySelectors";
 import {useNavigate, useParams} from "react-router";
 import {HOME_PAGE_ROUTE} from "../../index";
 import {TabContext, TabList} from "@mui/lab";
+import GalleryTabPanel from "./GalleryTabPanel";
+import Divider from '@mui/material/Divider';
+
 
 
 function GalleryTab() {
@@ -21,20 +24,20 @@ function GalleryTab() {
     const GalleryNameTabs = () => {
         const galleryNames = useSelector(getGalleryNames)
         return galleryNames.map(gallery => {
-            return <Tab wrapped key={gallery.id} value={gallery.id} label={gallery.name} />
+            return <Tab wrapped key={gallery.id} value={gallery.id} label={gallery.name} style={{background: "white"}} />
         })
     }
 
     const GalleryTabPanels = () => {
         const galleryNames = useSelector(getGalleryNames)
         return galleryNames.map(gallery => {
-            return <TabPanel value={gallery.id}>{gallery.name}</TabPanel>
+            return <TabPanel key={gallery.id} value={gallery.id}>{<GalleryTabPanel key={gallery.id} id={gallery.id} name={gallery.name}></GalleryTabPanel>}</TabPanel>
         })
     }
 
     return (
         <TabContext value={galleryId}>
-            <Box>
+            <Box style={{display: 'flex', justifyContent: 'center'}}>
                 <TabList
                     value={galleryId}
                     onChange={handleChange}
@@ -43,13 +46,11 @@ function GalleryTab() {
                     aria-label="scrollable auto tabs example"
                 >
                     {GalleryNameTabs()}
-                    {GalleryNameTabs()}
-                    {GalleryNameTabs()}
-                    {GalleryNameTabs()}
-                    {GalleryNameTabs()}
                 </TabList>
             </Box>
+            <Divider variant="middle"/>
             {GalleryTabPanels()}
+
         </TabContext>
 );
 }

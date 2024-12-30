@@ -1,14 +1,14 @@
-import {fetchChildFoldersOfGalleryFolder} from "../api/client/directusClient";
+import {fetchChildFoldersOfGalleryFolder, fetchCoverImagesOfGalleries} from "../api/client/directusClient";
 
 export const LOADING_GALLERY_NAMES = "galleryNames/loading"
 export const LOADED_GALLERY_NAMES = "galleryNames/loaded"
 export const ERROR_GALLERY_NAMES = "galleryNames/error"
 
-const loadedGalleryNames = (galleryNames = []) => {
+const loadedGalleryNames = (galleryDetails = []) => {
 
     return {
         type: LOADED_GALLERY_NAMES,
-        payload: galleryNames
+        payload: galleryDetails
     }
 
 }
@@ -36,12 +36,26 @@ const errorGalleryNames = (error) => {
 export const fetchGalleryNames = async (dispatch, getState) => {
 
     dispatch(loadGalleryNames())
-    const response = await fetchChildFoldersOfGalleryFolder();
-    const galleries = response && response.data && response.data.data;
+    const names = await fetchChildFoldersOfGalleryFolder();
+    const coverDetails = await fetchCoverImagesOfGalleries();
+
+    const galleries = names && names.data && names.data.data;
+    const coverImages = coverDetails && coverDetails.data && coverDetails.data.data || [];
+    const folderToCoverMap = coverImages.reduce(function(result, coverDetails) {
+        result[coverDetails.folder] = coverDetails;
+        return result;
+    }, {})
+    const galleriesWithCover = galleries.map(gallery => {
+        return {
+            ...gallery,
+            coverDetails: folderToCoverMap[gallery.id]
+        }
+    })
+
     if (galleries) {
-        dispatch(loadedGalleryNames(galleries))
+        dispatch(loadedGalleryNames(galleriesWithCover))
     } else {
-        const errors = (response && response.data && response.data.errors)
+        const errors = (galleries && galleries.data && galleries.data.errors)
         dispatch(errorGalleryNames(errors));
     }
 

@@ -23,11 +23,13 @@
     "popper.js": "^1.15.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-photo-album": "^3.0.2",
     "react-redux": "^9.2.0",
     "react-router": "^7.1.1",
     "react-scripts": "^5.0.1",
     "react-typed": "^2.0.12",
-    "typed.js": "^2.0.10"
+    "typed.js": "^2.0.10",
+    "yet-another-react-lightbox": "^3.21.7"
   },
   "scripts": {
     "predeploy": "npm run build",

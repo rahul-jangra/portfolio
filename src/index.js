@@ -32,7 +32,8 @@ import store from "./store/store";
 import {fetchGalleryNames} from "./store/galleryNamesAction";
 import {BrowserRouter, Outlet, Route, Routes} from "react-router";
 import GalleryTab from "./components/Gallery/GalleryTab";
-import GalleryDetails from "./components/Gallery/GalleryDetails";
+import GalleryAppBar from "./components/Gallery/GalleryAppBar";
+import WorkCover from "./components/WorkCover";
 
 
 store.dispatch(fetchGalleryNames)
@@ -44,24 +45,25 @@ export const GALLERY_PAGE_ROUTE = "/portfolio/gallery/:id";
 
 const HomePage = () => {
     return (
-        <React.Fragment>
+        <div>
             <Navbar />
             <Intro />
             <About />
             <Portfolio />
+            <WorkCover />
             <Contact />
             <BackToTop />
             <Preloader />
-        </React.Fragment>
+        </div>
     )
 }
 
 const GalleryDetailsPages = () => {
     return (
-        <React.Fragment>
-            <GalleryDetails />
+        <div>
+            <GalleryAppBar />
             <GalleryTab />
-        </React.Fragment>
+        </div>
     )
 }
 

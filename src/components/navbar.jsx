@@ -30,26 +30,32 @@ class Navbar extends React.Component {
     $(".js-scroll").on("click", function() {
       $(".navbar-collapse").collapse("hide");
     });
+    try {
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 50) {
+          if (document.querySelector(".navbar-expand-md")) {
+            document
+                .querySelector(".navbar-expand-md")
+                .classList.add("navbar-reduce");
+            document
+                .querySelector(".navbar-expand-md")
+                .classList.remove("navbar-trans");
+            this.setState({ logo: logo2 });
+          }
+        } else {
+          if (document.querySelector(".navbar-expand-md")) {
+            document
+                .querySelector(".navbar-expand-md")
+                .classList.add("navbar-trans");
+            document
+                .querySelector(".navbar-expand-md")
+                .classList.remove("navbar-reduce");
+            this.setState({ logo: logo1 });
+          }
+        }
+      });
+    } catch (e) {console.log(e)}
 
-    window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 50) {
-        document
-          .querySelector(".navbar-expand-md")
-          .classList.add("navbar-reduce");
-        document
-          .querySelector(".navbar-expand-md")
-          .classList.remove("navbar-trans");
-        this.setState({ logo: logo2 });
-      } else {
-        document
-          .querySelector(".navbar-expand-md")
-          .classList.add("navbar-trans");
-        document
-          .querySelector(".navbar-expand-md")
-          .classList.remove("navbar-reduce");
-        this.setState({ logo: logo1 });
-      }
-    });
 
     $('a.js-scroll[href*="#"]:not([href="#"])').on("click", function() {
       if (

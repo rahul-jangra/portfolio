@@ -1,10 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
-import {galleryNamesReducer} from "./galleryReducers";
+import {galleryFilesReducer, galleryNamesReducer} from "./galleryReducers";
 
 
 const store = configureStore({
         reducer: {
-            galleries: galleryNamesReducer
+            galleries: galleryNamesReducer,
+            galleryFiles: galleryFilesReducer
         }
     })
 

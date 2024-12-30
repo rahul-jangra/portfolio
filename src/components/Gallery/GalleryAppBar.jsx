@@ -20,7 +20,7 @@ const drawerWidth = 240;
 const navItems = ['Home', 'About', 'Contact'];
 const HEADING_NAME = "Vidhi Jangra";
 
-function GalleryDetails() {
+function GalleryAppBar() {
     const [mobileOpen, setMobileOpen] = React.useState(false);
 
     const handleDrawerToggle = () => {
@@ -48,7 +48,7 @@ function GalleryDetails() {
     return (
         <Box sx={{ display: 'flex' }}>
             <CssBaseline />
-            <AppBar component="nav" color="#4e4e4e">
+            <AppBar component="nav" color="#4e4e4e" style={{ background: 'white', boxShadow: 'none'}}>
                 <Toolbar>
                     <IconButton
                         color="inherit"
@@ -100,4 +100,4 @@ function GalleryDetails() {
 
 
 
-export default GalleryDetails;
+export default GalleryAppBar;
